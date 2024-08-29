@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a71957f6-c8ca-4f9a-8304-2c5f35ec1814" name="Changes" comment="Added env variables">
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/PackageDAOTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/PackageDAOTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Persistence/Entities/DeliveryStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Persistence/Entities/DeliveryStatus.java" afterDir="false" />
+    <list default="true" id="a71957f6-c8ca-4f9a-8304-2c5f35ec1814" name="Changes" comment="Minor typos and added Equals &amp; Hashcode">
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Persistence/Entities/Package.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Persistence/Entities/Package.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,26 +46,26 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Application.Main.executor": "Run",
-    "Application.Run Main.executor": "Run",
-    "JUnit.PackageDAOTest.executor": "Run",
-    "JUnit.TestExample.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/magnusnorgaardweihager/Documents/GitHub/CPH-BUSINESS/Friday-Week2",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Run Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PackageDAOTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestExample.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/magnusnorgaardweihager/Documents/GitHub/CPH-BUSINESS/Friday-Week2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -91,11 +90,6 @@
       <item itemvalue="Application.Run Main" />
       <item itemvalue="JUnit.PackageDAOTest" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.PackageDAOTest" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -122,7 +116,7 @@
       <workItem from="1724936090820" duration="80000" />
       <workItem from="1724936206797" duration="111000" />
       <workItem from="1724936324144" duration="633000" />
-      <workItem from="1724937065823" duration="1297000" />
+      <workItem from="1724937065823" duration="3804000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -236,7 +230,31 @@
       <option name="project" value="LOCAL" />
       <updated>1724938154896</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added env variables">
+      <option name="closed" value="true" />
+      <created>1724938367486</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1724938367486</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Added env variables">
+      <option name="closed" value="true" />
+      <created>1724938370886</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1724938370886</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Minor typos and added Equals &amp; Hashcode">
+      <option name="closed" value="true" />
+      <created>1724938411234</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1724938411234</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +269,7 @@
     <MESSAGE value="Cleanup PackageDAO" />
     <MESSAGE value="Fixed typos in comments.&#10;Fixed variable naming." />
     <MESSAGE value="Added env variables" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added env variables" />
+    <MESSAGE value="Minor typos and added Equals &amp; Hashcode" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor typos and added Equals &amp; Hashcode" />
   </component>
 </project>
