@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a71957f6-c8ca-4f9a-8304-2c5f35ec1814" name="Changes" comment="Init commit">
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PackageDAOTest.java" afterDir="false" />
+    <list default="true" id="a71957f6-c8ca-4f9a-8304-2c5f35ec1814" name="Changes" comment="Cleanup PackageDAO">
+      <change beforePath="$PROJECT_DIR$/src/test/java/PackageDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PackageDAOTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +103,7 @@
       <workItem from="1724935941180" duration="143000" />
       <workItem from="1724936090820" duration="80000" />
       <workItem from="1724936206797" duration="111000" />
-      <workItem from="1724936324144" duration="332000" />
+      <workItem from="1724936324144" duration="633000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -169,7 +169,23 @@
       <option name="project" value="LOCAL" />
       <updated>1724936350509</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Cleanup unit test">
+      <option name="closed" value="true" />
+      <created>1724936679362</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1724936679362</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Cleanup PackageDAO">
+      <option name="closed" value="true" />
+      <created>1724936819593</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1724936819593</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +196,8 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="Init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init commit" />
+    <MESSAGE value="Cleanup unit test" />
+    <MESSAGE value="Cleanup PackageDAO" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleanup PackageDAO" />
   </component>
 </project>

@@ -9,14 +9,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class PackageDAOTest {
-    private static EntityManagerFactory emfTest = HibernateConfig.getEntityManagerFactory();;
+    private static final EntityManagerFactory emfTest = HibernateConfig.getEntityManagerFactory();;
     private static final PackageDAO packageDao = new PackageDAO(emfTest);
     private Package testPackage;
 
     @BeforeEach
     void setUp() {
 
-        // Create and persist a new package before each test
+        // Create and persist a new package before each test.
         testPackage = Package.builder()
                 .deliveryStatus(DeliveryStatus.PENDING)
                 .senderName("Sender")
@@ -24,14 +24,13 @@ public class PackageDAOTest {
                 .receiverName("Receiver")
                 .build();
 
-        // Persist the package to be used in each test
+        // Persist the package to be used in each test.
         packageDao.create(testPackage);
     }
 
-
     @AfterEach
     public void tearDownEach() {
-        // Delete the package after each test to clean up
+        // Delete the package after each test to clean up.
         if (testPackage != null) packageDao.delete(testPackage);
     }
 
