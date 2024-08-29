@@ -1,0 +1,18 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="PackageDAOTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+    <module name="HibernateTemplate" />
+    <option name="PACKAGE_NAME" value="" />
+    <option name="MAIN_CLASS_NAME" value="PackageDAOTest" />
+    <option name="METHOD_NAME" value="" />
+    <option name="TEST_OBJECT" value="class" />
+    <envs>
+      <env name="dbHostname" value="jdbc:postgresql://164.90.196.139:5432/friday2_magnus" />
+      <env name="dbUsername" value="postgres" />
+      <env name="dbPassword" value="cphbusiness123" />
+      <env name="dbName" value="friday2_magnus" />
+    </envs>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
