@@ -34,15 +34,6 @@ public class PackageDAO implements iDAO<Package> {
         }
     }
 
-    public boolean deleteById(int id) {
-        try (EntityManager em = emf.createEntityManager()) {
-            em.getTransaction().begin();
-            em.createQuery("DELETE Package p WHERE p.id = :id").setParameter("id", id).executeUpdate();
-            em.getTransaction().commit();
-            return true;
-        }
-    }
-
     @Override
     public Package getById(long id) {
         Package pack;
@@ -73,34 +64,6 @@ public class PackageDAO implements iDAO<Package> {
     public boolean update(Package pack) {
         try (EntityManager em = emf.createEntityManager()) {
             em.getTransaction().begin();
-            em.merge(pack);
-            em.getTransaction().commit();
-            return true;
-        }
-    }
-
-    public Package getByTrackingNumber(int id) {
-        Package pack;
-
-        try (EntityManager em = emf.createEntityManager()) {
-            em.getTransaction().begin();
-            pack = em.createQuery("SELECT p FROM Package p WHERE p.trackingNumber = :id", Package.class)
-                    .setParameter("id", id)
-                    .getSingleResult();
-
-            em.persist(pack);
-            em.getTransaction().commit();
-            return pack;
-        }
-    }
-
-    public boolean updateDeliveryStatus(Package pack) {
-        try (EntityManager em = emf.createEntityManager()) {
-            em.getTransaction().begin();
-
-            // ++ the delivery status of the package.
-            pack.setDeliveryStatus(pack.getDeliveryStatus().getNextStatus());
-
             em.merge(pack);
             em.getTransaction().commit();
             return true;
