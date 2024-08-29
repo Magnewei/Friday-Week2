@@ -8,18 +8,14 @@ import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-public class TestExample {
+public class PackageDAOTest {
     private static EntityManagerFactory emfTest = HibernateConfig.getEntityManagerFactory();;
     private static final PackageDAO packageDao = new PackageDAO(emfTest);
     private Package testPackage;
 
-    @BeforeAll
-    static void setUpAll() {
-        emfTest = HibernateConfig.getEntityManagerFactory();
-    }
-
     @BeforeEach
     void setUp() {
+
         // Create and persist a new package before each test
         testPackage = Package.builder()
                 .deliveryStatus(DeliveryStatus.PENDING)
@@ -28,34 +24,24 @@ public class TestExample {
                 .receiverName("Receiver")
                 .build();
 
-        packageDao.create(testPackage); // Persist the package to be used in each test
+        // Persist the package to be used in each test
+        packageDao.create(testPackage);
     }
 
-    @AfterAll
-    public static void tearDown() {
-        if (emfTest.createEntityManager().getTransaction().isActive()) {
-            emfTest.createEntityManager().getTransaction().rollback();
-        }
-
-        emfTest.createEntityManager().close();
-    }
 
     @AfterEach
     public void tearDownEach() {
         // Delete the package after each test to clean up
-
-        if (testPackage != null) {
-            packageDao.delete(testPackage);
-        }
+        if (testPackage != null) packageDao.delete(testPackage);
     }
 
 
     @Test
     public void testPersistPackage() {
         String trackingNumber = "ABC123";
-        assertNotNull(testPackage);
+        long packageId = testPackage.getId();
 
-        Package retrievedPackage = emfTest.createEntityManager().find(Package.class, testPackage.getId());
+        Package retrievedPackage = emfTest.createEntityManager().find(Package.class, packageId);
         assertNotNull(retrievedPackage);
         assertEquals(retrievedPackage.getTrackingNumber(), trackingNumber);
     }
