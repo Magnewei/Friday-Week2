@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a71957f6-c8ca-4f9a-8304-2c5f35ec1814" name="Changes" comment="Minor typos and added Equals &amp; Hashcode">
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Persistence/Entities/Package.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Persistence/Entities/Package.java" afterDir="false" />
-    </list>
+    <list default="true" id="a71957f6-c8ca-4f9a-8304-2c5f35ec1814" name="Changes" comment="Added lifecycle methods." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,6 +115,7 @@
       <workItem from="1724936206797" duration="111000" />
       <workItem from="1724936324144" duration="633000" />
       <workItem from="1724937065823" duration="3804000" />
+      <workItem from="1724956169299" duration="325000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -254,7 +253,23 @@
       <option name="project" value="LOCAL" />
       <updated>1724938411234</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added lifecycle methods.">
+      <option name="closed" value="true" />
+      <created>1724956307900</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1724956307900</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Added lifecycle methods.">
+      <option name="closed" value="true" />
+      <created>1724956364080</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1724956364080</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +285,7 @@
     <MESSAGE value="Fixed typos in comments.&#10;Fixed variable naming." />
     <MESSAGE value="Added env variables" />
     <MESSAGE value="Minor typos and added Equals &amp; Hashcode" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor typos and added Equals &amp; Hashcode" />
+    <MESSAGE value="Added lifecycle methods." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added lifecycle methods." />
   </component>
 </project>

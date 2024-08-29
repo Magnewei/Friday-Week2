@@ -81,6 +81,6 @@ public class PackageDAOTest {
 
         // Assert that the delivery status has been updated in the database.
         Package pack = packageDao.getById(id);
-        Assertions.assertNotSame(DeliveryStatus.PENDING, pack.getDeliveryStatus());
+        assertNotSame(DeliveryStatus.PENDING, pack.getDeliveryStatus());
     }
 }
