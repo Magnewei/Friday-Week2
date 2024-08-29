@@ -10,6 +10,7 @@ import lombok.*;
 @Setter
 @ToString
 @Table(name = "packages")
+@EqualsAndHashCode
 public class Package {
 
     @Id
