@@ -16,11 +16,13 @@ public enum DeliveryStatus {
         this.description = description;
     }
 
+
+    // Go one level up. Stay on current level if package is DELIVERED.
     public DeliveryStatus getNextStatus() {
         return switch (this) {
             case PENDING -> IN_TRANSIT;
             case IN_TRANSIT -> DELIVERED;
-            default -> this; // No next state after DELIVERED
+            default -> this;
         };
     }
 }

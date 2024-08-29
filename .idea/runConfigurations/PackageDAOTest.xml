@@ -7,9 +7,9 @@
     <option name="TEST_OBJECT" value="class" />
     <envs>
       <env name="dbHostname" value="jdbc:postgresql://164.90.196.139:5432/friday2_magnus" />
-      <env name="dbUsername" value="postgres" />
-      <env name="dbPassword" value="cphbusiness123" />
       <env name="dbName" value="friday2_magnus" />
+      <env name="dbPassword" value="cphbusiness123" />
+      <env name="dbUsername" value="postgres" />
     </envs>
     <method v="2">
       <option name="Make" enabled="true" />
