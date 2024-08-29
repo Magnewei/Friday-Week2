@@ -15,7 +15,7 @@ public class Package {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id",unique = true,nullable = false)
-    private long Id;
+    private long id;
 
     @Column(name = "tracking_number",unique = false, nullable = false)
     private String trackingNumber;
