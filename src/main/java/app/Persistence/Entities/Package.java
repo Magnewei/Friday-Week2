@@ -39,12 +39,12 @@ public class Package {
     private LocalDateTime lastUpdated;
 
     @PrePersist
-    protected void onCreate() {
+    private void onCreate() {
         this.lastUpdated = LocalDateTime.now();
     }
 
     @PreUpdate
-    protected void onUpdate() {
+    private void onUpdate() {
         this.lastUpdated = LocalDateTime.now();
     }
 }
