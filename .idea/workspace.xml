@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a71957f6-c8ca-4f9a-8304-2c5f35ec1814" name="Changes" comment="Fixed typos in comments.&#10;Fixed variable naming.">
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Persistence/Entities/Package.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Persistence/Entities/Package.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Persistence/HibernateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Persistence/HibernateConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +79,24 @@
       <recent name="app.Persistence" />
     </key>
   </component>
+  <component name="RunManager" selected="JUnit.PackageDAOTest">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <module name="HibernateTemplate" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Application.Run Main" />
+      <item itemvalue="JUnit.PackageDAOTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PackageDAOTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -104,7 +122,7 @@
       <workItem from="1724936090820" duration="80000" />
       <workItem from="1724936206797" duration="111000" />
       <workItem from="1724936324144" duration="633000" />
-      <workItem from="1724937065823" duration="321000" />
+      <workItem from="1724937065823" duration="863000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -194,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724937364152</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Fixed typos in comments.&#10;Fixed variable naming.">
+      <option name="closed" value="true" />
+      <created>1724937409126</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1724937409127</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

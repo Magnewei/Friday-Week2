@@ -14,10 +14,10 @@ import java.util.Properties;
  * Author: Thomas Hartmann
  */
 public class HibernateConfig {
-    private static final String dbHostname = "jdbc:postgresql://164.90.196.139:5432/friday2_magnus";
-    private static final String dbUserName = "postgres";
-    private static final String dbPassword = "cphbusiness123";
-    private static final String dbName = "friday2_magnus";
+    private static final String DB_URL = System.getenv("dbHostname");;
+    private static final String DB_USERNAME = System.getenv("dbUsername");
+    private static final String DB_PASSWORD = System.getenv("dbPassword");
+    private static final String DB_NAME = System.getenv("dbName");
 
     private static EntityManagerFactory emf;
     private static boolean isIntegrationTest = false; // this flag is set for
@@ -25,7 +25,6 @@ public class HibernateConfig {
     public static void setTestMode(boolean isTest) {
         HibernateConfig.isIntegrationTest = isTest;
     }
-
 
     private static EntityManagerFactory emfTest;
 
@@ -93,16 +92,16 @@ public class HibernateConfig {
     }
 
     private static Properties setDeployedProperties(Properties props) {
-        props.setProperty("hibernate.connection.url", dbHostname);
-        props.setProperty("hibernate.connection.username", dbUserName);
-        props.setProperty("hibernate.connection.password", dbPassword);
+        props.setProperty("hibernate.connection.url", DB_URL);
+        props.setProperty("hibernate.connection.username", DB_USERNAME);
+        props.setProperty("hibernate.connection.password", DB_PASSWORD);
         return props;
     }
 
     private static Properties setDevProperties(Properties props) {
-        props.put("hibernate.connection.url", "jdbc:postgresql://164.90.196.139:5432/" + dbName);
-        props.put("hibernate.connection.username", dbUserName);
-        props.put("hibernate.connection.password", dbPassword);
+        props.put("hibernate.connection.url", "jdbc:postgresql://164.90.196.139:5432/" + DB_NAME);
+        props.put("hibernate.connection.username", DB_USERNAME);
+        props.put("hibernate.connection.password", DB_PASSWORD);
         return props;
     }
 
@@ -110,8 +109,8 @@ public class HibernateConfig {
 //        props.put("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect");
         props.put("hibernate.connection.driver_class", "org.testcontainers.jdbc.ContainerDatabaseDriver");
         props.put("hibernate.connection.url", "jdbc:tc:postgresql:15.3-alpine3.18:///test_db");
-        props.put("hibernate.connection.username", dbUserName);
-        props.put("hibernate.connection.password", dbPassword);
+        props.put("hibernate.connection.username", DB_USERNAME);
+        props.put("hibernate.connection.password", DB_PASSWORD);
         props.put("hibernate.archive.autodetection", "class");
         props.put("hibernate.show_sql", "true");
         props.put("hibernate.hbm2ddl.auto", "create-drop");

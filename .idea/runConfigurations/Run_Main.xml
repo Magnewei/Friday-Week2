@@ -2,6 +2,12 @@
   <configuration default="false" name="Run Main" type="Application" factoryName="Application">
     <option name="ALTERNATIVE_JRE_PATH" value="corretto-17" />
     <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <envs>
+      <env name="dbHostname" value="jdbc:postgresql://164.90.196.139:5432/friday2_magnus" />
+      <env name="dbUsername" value="postgres" />
+      <env name="dbPassword" value="cphbusiness123" />
+      <env name="dbName" value="friday2_magnus" />
+    </envs>
     <option name="MAIN_CLASS_NAME" value="app.Main" />
     <module name="HibernateTemplate" />
     <method v="2">
