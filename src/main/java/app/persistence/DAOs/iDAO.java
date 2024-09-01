@@ -1,4 +1,4 @@
-package app.Persistence.DAOs;
+package app.persistence.DAOs;
 
 import java.util.Set;
 

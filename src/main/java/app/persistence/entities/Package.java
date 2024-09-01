@@ -1,4 +1,4 @@
-package app.Persistence.Entities;
+package app.persistence.entities;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -34,17 +34,22 @@ public class Package {
     @Column(name = "delivery_status", unique = false, nullable = false)
     private DeliveryStatus deliveryStatus;
 
+    public enum DeliveryStatus {
+        PENDING,
+        IN_TRANSIT,
+        DELIVERED;
+    }
 
     @Column(name = "last_updated", nullable = false)
     private LocalDateTime lastUpdated;
 
     @PrePersist
     private void onCreate() {
-        this.lastUpdated = LocalDateTime.now();
+        lastUpdated = LocalDateTime.now();
     }
 
     @PreUpdate
     private void onUpdate() {
-        this.lastUpdated = LocalDateTime.now();
+        lastUpdated = LocalDateTime.now();
     }
 }

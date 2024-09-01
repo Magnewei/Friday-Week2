@@ -1,6 +1,6 @@
-package app.Persistence.DAOs;
+package app.persistence.DAOs;
 
-import app.Persistence.Entities.Package;
+import app.persistence.entities.Package;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.TypedQuery;
