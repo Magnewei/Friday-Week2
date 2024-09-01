@@ -49,15 +49,11 @@ public class PackageDAO implements iDAO<Package> {
     }
 
     @Override
-    public Package getById(long id) {
-        Package pack;
+    public Package getById(Package pack) {
 
         try (EntityManager em = emf.createEntityManager()) {
             em.getTransaction().begin();
-            pack = em.createQuery("SELECT p FROM Package p WHERE p.id = :id", Package.class)
-                    .setParameter("id", id)
-                    .getSingleResult();
-
+            em.find(Package.class, pack.getId());
             em.getTransaction().commit();
             return pack;
 

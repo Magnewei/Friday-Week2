@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a71957f6-c8ca-4f9a-8304-2c5f35ec1814" name="Changes" comment="We cleanin">
+    <list default="true" id="a71957f6-c8ca-4f9a-8304-2c5f35ec1814" name="Changes" comment="Final clean up">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/persistence/DAOs/PackageDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/persistence/DAOs/PackageDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/persistence/DAOs/iDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/persistence/DAOs/iDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +42,10 @@
     &quot;accountId&quot;: &quot;a5e1d5c9-a7cb-4beb-9b2f-a6bd662c4e06&quot;
   }
 }</component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -69,7 +74,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "settings.editor.selected.configurable": "editor.preferences.tabs",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -127,7 +132,7 @@
       <workItem from="1724956169299" duration="5388000" />
       <workItem from="1725043874696" duration="212000" />
       <workItem from="1725150446003" duration="249000" />
-      <workItem from="1725150699815" duration="9488000" />
+      <workItem from="1725150699815" duration="10306000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -321,7 +326,23 @@
       <option name="project" value="LOCAL" />
       <updated>1725215981035</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Final clean up">
+      <option name="closed" value="true" />
+      <created>1725217415463</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1725217415463</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Final clean up">
+      <option name="closed" value="true" />
+      <created>1725217641140</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1725217641140</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,6 +362,7 @@
     <MESSAGE value="Fixed access modifiers" />
     <MESSAGE value="Pruned DeliveryStatus" />
     <MESSAGE value="We cleanin" />
-    <option name="LAST_COMMIT_MESSAGE" value="We cleanin" />
+    <MESSAGE value="Final clean up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final clean up" />
   </component>
 </project>

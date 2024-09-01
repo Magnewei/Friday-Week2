@@ -41,9 +41,8 @@ public class PackageDAOTest {
     @Test
     public void testPersistPackage() {
         String trackingNumber = "ABC123";
-        long packageId = testPackage.getId();
 
-        Package retrievedPackage = packageDao.getById(packageId);
+        Package retrievedPackage = packageDao.getById(testPackage);
         assertNotNull(retrievedPackage);
         assertEquals(retrievedPackage.getTrackingNumber(), trackingNumber);
     }
@@ -67,17 +66,15 @@ public class PackageDAOTest {
 
     @Test
     public void testGetById() {
-        long id = testPackage.getId();
-        assertNotNull(packageDao.getById(id));
+        assertNotNull(packageDao.getById(testPackage));
     }
 
     @Test
     public void testUpdatePackage() {
-        long id = testPackage.getId();
         testPackage.setDeliveryStatus(Package.DeliveryStatus.PENDING);
         assertTrue(packageDao.update(testPackage));
 
-        Package pack = packageDao.getById(id);
+        Package pack = packageDao.getById(testPackage);
         LocalDateTime notNow = LocalDateTime.of(2021, 2, 2, 2, 2);
         assertNotSame(notNow, pack.getLastUpdated());
     }
