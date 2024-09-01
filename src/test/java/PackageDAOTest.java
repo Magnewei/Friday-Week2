@@ -62,9 +62,7 @@ public class PackageDAOTest {
                 build();
 
         packageDao.create(pack);
-
-        boolean successfulDeletion = packageDao.delete(pack);
-        assertTrue(successfulDeletion);
+        assertTrue(packageDao.delete(pack));
     }
 
     @Test
@@ -77,9 +75,7 @@ public class PackageDAOTest {
     public void testUpdatePackage() {
         long id = testPackage.getId();
         testPackage.setDeliveryStatus(Package.DeliveryStatus.PENDING);
-
-        boolean updateSuccessful = packageDao.update(testPackage);
-        assertTrue(updateSuccessful);
+        assertTrue(packageDao.update(testPackage));
 
         Package pack = packageDao.getById(id);
         LocalDateTime notNow = LocalDateTime.of(2021, 2, 2, 2, 2);
