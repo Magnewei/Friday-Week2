@@ -13,13 +13,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class PackageDAOTest {
-    private static EntityManagerFactory emfTest;
     private static PackageDAO packageDao;
     private Package testPackage;
 
     @BeforeAll
     void setUp() {
-        emfTest = HibernateConfig.getEntityManagerFactory();
+        EntityManagerFactory emfTest = HibernateConfig.getEntityManagerFactory();
         packageDao = new PackageDAO(emfTest);
 
         testPackage = Package
@@ -57,8 +56,10 @@ public class PackageDAOTest {
         Package pack = Package
                 .builder()
                 .deliveryStatus(Package.DeliveryStatus.PENDING)
-                .senderName("Sender").trackingNumber(trackingNumber)
-                .receiverName("Receiver").build();
+                .senderName("Sender").
+                trackingNumber(trackingNumber)
+                .receiverName("Receiver").
+                build();
 
         packageDao.create(pack);
 

@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a71957f6-c8ca-4f9a-8304-2c5f35ec1814" name="Changes" comment="Pruned DeliveryStatus">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Persistence/DAOs/PackageDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/persistence/DAOs/PackageDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Persistence/DAOs/iDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/persistence/DAOs/iDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Persistence/Entities/DeliveryStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Persistence/Entities/Package.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/persistence/entities/Package.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Persistence/HibernateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/persistence/HibernateConfig.java" afterDir="false" />
+    <list default="true" id="a71957f6-c8ca-4f9a-8304-2c5f35ec1814" name="Changes" comment="We cleanin">
       <change beforePath="$PROJECT_DIR$/src/test/java/PackageDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PackageDAOTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +126,7 @@
       <workItem from="1724956169299" duration="5388000" />
       <workItem from="1725043874696" duration="212000" />
       <workItem from="1725150446003" duration="249000" />
-      <workItem from="1725150699815" duration="7596000" />
+      <workItem from="1725150699815" duration="7914000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -302,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725150611488</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="We cleanin">
+      <option name="closed" value="true" />
+      <created>1725215495486</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1725215495486</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,6 +323,7 @@
     <MESSAGE value="Added lifecycle methods." />
     <MESSAGE value="Fixed access modifiers" />
     <MESSAGE value="Pruned DeliveryStatus" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pruned DeliveryStatus" />
+    <MESSAGE value="We cleanin" />
+    <option name="LAST_COMMIT_MESSAGE" value="We cleanin" />
   </component>
 </project>
