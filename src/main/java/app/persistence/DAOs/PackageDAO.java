@@ -10,8 +10,8 @@ import java.util.Set;
 public class PackageDAO implements iDAO<Package> {
     private final EntityManagerFactory emf;
 
-    public PackageDAO(EntityManagerFactory emf) {
-        this.emf = emf;
+    public PackageDAO(EntityManagerFactory entityManagerFactory) {
+        emf = entityManagerFactory;
     }
 
     @Override
@@ -21,7 +21,14 @@ public class PackageDAO implements iDAO<Package> {
             em.persist(pack);
             em.getTransaction().commit();
             return true;
+
+        } catch (IllegalArgumentException | IllegalStateException e) {
+            e.printStackTrace();
+            emf.createEntityManager().getTransaction().rollback();
+            emf.close();
         }
+
+        return false;
     }
 
     @Override
@@ -31,7 +38,14 @@ public class PackageDAO implements iDAO<Package> {
             em.remove(pack);
             em.getTransaction().commit();
             return true;
+
+        } catch (IllegalArgumentException | IllegalStateException e) {
+            e.printStackTrace();
+            emf.createEntityManager().getTransaction().rollback();
+            emf.close();
         }
+
+        return false;
     }
 
     @Override
@@ -44,20 +58,31 @@ public class PackageDAO implements iDAO<Package> {
                     .setParameter("id", id)
                     .getSingleResult();
 
-            em.persist(pack);
             em.getTransaction().commit();
             return pack;
+
+        } catch (IllegalArgumentException | IllegalStateException e) {
+            e.printStackTrace();
+            emf.createEntityManager().getTransaction().rollback();
+            emf.close();
         }
+
+        return null;
     }
 
     @Override
     public Set<Package> getAll() {
         try (EntityManager em = emf.createEntityManager()) {
-            em.getTransaction().begin();
             TypedQuery<Package> query = em.createQuery("SELECT p FROM Package p", Package.class);
-            em.getTransaction().commit();
             return new HashSet<>(query.getResultList());
+
+        } catch (IllegalArgumentException | IllegalStateException e) {
+            e.printStackTrace();
+            emf.createEntityManager().getTransaction().rollback();
+            emf.close();
         }
+
+        return null;
     }
 
     @Override
@@ -67,6 +92,13 @@ public class PackageDAO implements iDAO<Package> {
             em.merge(pack);
             em.getTransaction().commit();
             return true;
+
+        } catch (IllegalArgumentException | IllegalStateException e) {
+            e.printStackTrace();
+            emf.createEntityManager().getTransaction().rollback();
+            emf.close();
         }
+
+        return false;
     }
 }
