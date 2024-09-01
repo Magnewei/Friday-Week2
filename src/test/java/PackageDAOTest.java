@@ -15,7 +15,6 @@ public class PackageDAOTest {
 
     @BeforeEach
     void setUp() {
-
         // Create and persist a new package before each test.
         testPackage = Package.builder()
                 .deliveryStatus(DeliveryStatus.PENDING)
