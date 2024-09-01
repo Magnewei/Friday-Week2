@@ -44,7 +44,7 @@ public class PackageDAOTest {
         String trackingNumber = "ABC123";
         long packageId = testPackage.getId();
 
-        Package retrievedPackage = emfTest.createEntityManager().find(Package.class, packageId);
+        Package retrievedPackage = packageDao.getById(packageId);
         assertNotNull(retrievedPackage);
         assertEquals(retrievedPackage.getTrackingNumber(), trackingNumber);
     }
