@@ -66,6 +66,7 @@ public class PackageDAOTest {
 
     @Test
     public void testGetById() {
+        assertTrue(testPackage.getId() != 0);
         assertNotNull(packageDao.getById(testPackage));
     }
 
